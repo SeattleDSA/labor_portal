@@ -1,0 +1,13 @@
+extends layout
+
+
+block content
+  .w3-container
+    if locals.user
+      li Workplace Organizing resources
+        ul 
+          a(href='https://workerorganizing.org/') Emergency workplace organizing
+        ul 
+          a(href='https://drive.google.com/file/d/1gFF26iWI8jL_UFK_XDOIKhh81D4aJEwe/view?usp=sharing') Seattle DSA Workplace Organizing Guide
+    else
+      h4 You are not logged in! Please #[a(href="/login") Log In] to continue.
